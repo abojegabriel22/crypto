@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$WAP | MORE PASSION | AIRDROP</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/GQPvzds4/IMG-6487.jpg" type="image/x-icon">
+    <!-- --------bootstrap5 cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- ------custom css  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- google fonts poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary1 navbar-dark sticky-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="https://i.ibb.co/GQPvzds4/IMG-6487.jpg" alt="logo" width="50" height="50">
+            </a>
+            <div class="flip-box">
+              <h4 class="airdrop">Swap more</h4>
+            </div>              
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end nav-margin" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Spot</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Perps</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ape</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Onboard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-secondary text-connect" href="#">Connect</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <div class="collapse1 navbar-collapse">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </div>
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="home">
+      <div class="container my-5">
+        <div class="row align-items-center">
+          <div class="col-md-6 d-flex justify-content-center">
+            <div class="text-div text-white text-center">
+              <h2>The Pulse of the Crypto World.</h2>
+              <p>Live chats. Live prices. One platform.</p>
+              <p>Connect your wallet and receive airdrop tokens</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex justify-content-start">
+            <div class="image-div">
+              <img src="https://i.ibb.co/1fdhjwLz/airdrop.png" alt="Banner" title="crypto" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>      
+    </section>
+    <script>
+      const phrases = ["Swap more", "Trade better", "Earn fast"];
+      const headline = document.querySelector(".airdrop");
+      let index = 0;
+    
+      function flipAndChangeText() {
+        // Trigger the flip animation
+        headline.classList.add("flip");
+    
+        // At halfway point (500ms), change the text
+        setTimeout(() => {
+          index = (index + 1) % phrases.length;
+          headline.textContent = phrases[index];
+        }, 500);
+    
+        // Remove animation class after it's done (1s)
+        setTimeout(() => {
+          headline.classList.remove("flip");
+        }, 1000);
+      }
+    
+      // Repeat the flip every 2.5 seconds
+      setInterval(flipAndChangeText, 2500);
+    </script>
+    
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>
