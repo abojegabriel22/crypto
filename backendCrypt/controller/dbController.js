@@ -1,10 +1,14 @@
 
 const mongoose = require("mongoose");
+const dotenv = require("dotenv")
+dotenv.config()
+
+const mongourl = process.env.MongoUrl
 
 const dbConnect = async () => {
     try {
         await mongoose.connect(
-            "mongodb+srv://crypto:k4dukZDgkYiJ7CaO@crypto0.xicndel.mongodb.net/crypto?retryWrites=true&w=majority&appName=Crypto0",
+            mongourl,
             { 
                 useNewUrlParser: true,
                 useUnifiedTopology: true 

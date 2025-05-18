@@ -2,9 +2,11 @@ const express = require("express");
 const cors = require("cors");
 const dbConnect = require("./controller/dbController");
 const WalletModel = require("./models/wallet.models");
+const dotenv = require("dotenv")
+dotenv.config()
 
 const app = express();
-const PORT = 5000;
+const port = process.env.PORT
 
 app.use(express.json());
 app.use(cors());
@@ -33,7 +35,7 @@ app.post("/api/wallets", async (req, res) => {
   }
 });
 
-app.listen(PORT, async () => {
+app.listen(port, async () => {
   await dbConnect();
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server is running on port ${port}`);
 });
